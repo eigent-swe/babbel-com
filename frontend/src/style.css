@@ -1,0 +1,27 @@
+/* Babbel Mock — Global Styles */
+:root {
+  --color-primary: #FF6F00;
+  --color-accent-gold: #FFCF4D;
+  --color-bg: #F5F1EB;
+  --color-text: #1A1A1A;
+  --color-white: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.5;
+}
+
+#app {
+  min-height: 100vh;
+}
