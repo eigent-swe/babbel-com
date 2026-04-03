@@ -2,6 +2,7 @@ import './style.css';
 import { renderHeader, initHeader } from './components/header.js';
 import { renderHero } from './components/hero.js';
 import { renderFeatures } from './components/features.js';
+import { renderMethod } from './components/method.js';
 
 /**
  * Initialize the Babbel mock application.
@@ -14,6 +15,7 @@ export function initApp() {
     <main id="main">
       ${renderHero()}
       ${renderFeatures()}
+      ${renderMethod()}
     </main>
   `;
   initHeader();
