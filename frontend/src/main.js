@@ -4,6 +4,7 @@ import { renderHero } from './components/hero.js';
 import { renderFeatures } from './components/features.js';
 import { renderMethod } from './components/method.js';
 import { renderBeyond } from './components/beyond.js';
+import { renderReviews, initReviews } from './components/reviews.js';
 
 /**
  * Initialize the Babbel mock application.
@@ -18,9 +19,11 @@ export function initApp() {
       ${renderFeatures()}
       ${renderMethod()}
       ${renderBeyond()}
+      ${renderReviews()}
     </main>
   `;
   initHeader();
+  initReviews();
 }
 
 if (typeof document !== 'undefined' && document.readyState !== 'loading') {
