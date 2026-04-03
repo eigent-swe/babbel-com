@@ -15,11 +15,26 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: var(--color-text);
   background-color: var(--color-bg);
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
 }
 
 #app {
@@ -755,4 +770,132 @@ body {
 
 .footer__social-link:hover {
   color: var(--color-text);
+}
+
+/* ===== SKIP LINK ===== */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 8px 16px;
+  z-index: 200;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header__inner {
+    padding: 0 16px;
+  }
+
+  .header__nav-list {
+    gap: 4px;
+  }
+
+  .header__lang-btn {
+    display: none;
+  }
+
+  .header__nav-item--spacer {
+    display: none;
+  }
+
+  .hero__content {
+    flex-direction: column;
+    padding: 32px 16px 0;
+    gap: 24px;
+  }
+
+  .hero__title {
+    font-size: 28px;
+  }
+
+  .hero__lang-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features {
+    padding: 48px 16px;
+  }
+
+  .features__heading {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .features__cards {
+    gap: 48px;
+  }
+
+  .features__card,
+  .features__card--reversed {
+    flex-direction: column;
+  }
+
+  .features__card-title {
+    font-size: 22px;
+  }
+
+  .method__pillars {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .method__heading {
+    font-size: 28px;
+  }
+
+  .beyond__cards {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .beyond__heading {
+    font-size: 28px;
+  }
+
+  .reviews__header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .reviews__heading {
+    font-size: 24px;
+  }
+
+  .reviews__slide {
+    flex-direction: column;
+  }
+
+  .faq__heading {
+    font-size: 28px;
+  }
+
+  .cta__heading {
+    font-size: 24px;
+  }
+
+  .footer__nav-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__legal {
+    justify-content: center;
+  }
+
+  .footer__social {
+    justify-content: center;
+  }
 }

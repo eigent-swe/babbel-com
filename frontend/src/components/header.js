@@ -4,6 +4,7 @@
  */
 export function renderHeader() {
   return `
+    <a href="#main" class="skip-link">Skip to main content</a>
     <header class="header" id="site-header">
       <div class="header__inner">
         <a href="/" class="header__logo" aria-label="Babbel home">
