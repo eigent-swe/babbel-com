@@ -7,6 +7,7 @@ import { renderBeyond } from './components/beyond.js';
 import { renderReviews, initReviews } from './components/reviews.js';
 import { renderFAQ, initFAQ } from './components/faq.js';
 import { renderCTA } from './components/cta.js';
+import { renderFooter } from './components/footer.js';
 
 /**
  * Initialize the Babbel mock application.
@@ -25,6 +26,7 @@ export function initApp() {
       ${renderFAQ()}
       ${renderCTA()}
     </main>
+    ${renderFooter()}
   `;
   initHeader();
   initReviews();
