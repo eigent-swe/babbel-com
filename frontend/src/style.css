@@ -317,3 +317,49 @@ body {
 .features__card-cta:hover {
   opacity: 0.85;
 }
+
+/* ===== METHOD ===== */
+.method {
+  padding: 80px 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.method__heading {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.method__subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 48px;
+}
+
+.method__pillars {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  text-align: left;
+}
+
+.method__pillar {
+  padding: 8px;
+}
+
+.method__pillar-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.method__pillar-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+}
