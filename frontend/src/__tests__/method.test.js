@@ -19,4 +19,11 @@ describe('renderMethod', () => {
     const html = renderMethod();
     expect(html).toContain('award-winning app');
   });
+
+  it('should render pillar icons', () => {
+    const html = renderMethod();
+    expect(html).toContain('lightbulb_icon.svg');
+    expect(html).toContain('medal_icon.svg');
+    expect(html).toContain('users_icon.svg');
+  });
 });

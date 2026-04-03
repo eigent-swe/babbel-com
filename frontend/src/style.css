@@ -187,7 +187,7 @@ a {
 .hero__lang-grid {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 12px;
 }
 
@@ -239,7 +239,7 @@ a {
 }
 
 .hero__banner {
-  background: var(--color-accent-gold);
+  background: var(--color-primary);
   text-align: center;
   padding: 14px 24px;
   margin-top: 32px;
@@ -248,7 +248,7 @@ a {
 .hero__banner-text {
   font-size: 16px;
   font-weight: 700;
-  color: var(--color-text);
+  color: var(--color-white);
 }
 
 /* ===== FEATURES ===== */
@@ -365,6 +365,12 @@ a {
 
 .method__pillar {
   padding: 8px;
+}
+
+.method__pillar-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 16px;
 }
 
 .method__pillar-title {
@@ -817,7 +823,7 @@ a {
   }
 
   .hero__lang-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .features {

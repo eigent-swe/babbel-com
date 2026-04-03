@@ -18,7 +18,7 @@ describe('renderHeader', () => {
   it('should contain the language selector button', () => {
     const html = renderHeader();
     expect(html).toContain('American English');
-    expect(html).toContain('Display language');
+    expect(html).toContain('header__lang-btn');
   });
 
   it('should have proper ARIA attributes', () => {

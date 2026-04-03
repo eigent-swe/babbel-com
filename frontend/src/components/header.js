@@ -18,8 +18,9 @@ export function renderHeader() {
             <li class="header__nav-item">
               <button class="header__lang-btn" aria-label="Display language: American English">
                 <span class="header__lang-text">
-                  <span class="header__lang-label">Display language:</span>
-                  <span class="header__flag">🇺🇸</span>
+                  <svg class="header__globe-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
                   American English
                 </span>
                 <svg class="header__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -48,14 +49,11 @@ export function initHeader() {
   const header = document.getElementById('site-header');
   if (!header) return;
 
-  let lastScrollY = 0;
   window.addEventListener('scroll', () => {
-    const currentScrollY = window.scrollY;
-    if (currentScrollY > 60) {
+    if (window.scrollY > 60) {
       header.classList.add('header--scrolled');
     } else {
       header.classList.remove('header--scrolled');
     }
-    lastScrollY = currentScrollY;
   });
 }
