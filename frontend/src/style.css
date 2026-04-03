@@ -439,3 +439,90 @@ body {
 .beyond__card-link:hover {
   color: var(--color-primary);
 }
+
+/* ===== REVIEWS ===== */
+.reviews {
+  background: var(--color-accent-gold);
+  padding: 64px 24px;
+}
+
+.reviews__inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.reviews__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.reviews__heading {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.reviews__subheading {
+  font-size: 14px;
+  color: #444;
+}
+
+.reviews__nav {
+  display: flex;
+  gap: 8px;
+}
+
+.reviews__nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--color-text);
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.reviews__nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.reviews__track-wrapper {
+  overflow: hidden;
+}
+
+.reviews__track {
+  list-style: none;
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.reviews__slide {
+  min-width: 100%;
+  display: flex;
+  gap: 24px;
+}
+
+.reviews__quote {
+  flex: 1;
+  background: var(--color-white);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.reviews__reviewer {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: var(--color-text);
+}
+
+.reviews__text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
