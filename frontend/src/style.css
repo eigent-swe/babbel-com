@@ -135,3 +135,103 @@ body {
 .header__signup-btn:hover {
   opacity: 0.9;
 }
+
+/* ===== HERO ===== */
+.hero {
+  margin-top: 64px;
+  background: var(--color-white);
+}
+
+.hero__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px 0;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero__text {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero__title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 32px;
+  color: var(--color-text);
+}
+
+.hero__title em {
+  font-style: italic;
+  color: var(--color-primary);
+}
+
+.hero__lang-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.hero__lang-item {
+  display: block;
+}
+
+.hero__lang-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.hero__lang-link:hover {
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.hero__lang-flag {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.hero__lang-name {
+  white-space: nowrap;
+}
+
+.hero__image-wrapper {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.hero__banner {
+  background: var(--color-accent-gold);
+  text-align: center;
+  padding: 14px 24px;
+  margin-top: 32px;
+}
+
+.hero__banner-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text);
+}
